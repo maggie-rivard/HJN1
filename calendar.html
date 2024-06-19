@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Taniti - Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; cursor: default;}
+    .marcellus {font-family: "Marcellus", sans-serif; cursor: default;}
+    .w3-bar,h1,button {font-family: "Lato", sans-serif; text-transform: uppercase;}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large" style="background-color: teal;">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" style="background-color: teal;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="todo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">To Do</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Events</a>
+    <a href="faq.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">FAQ</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="todo.html" class="w3-bar-item w3-button w3-padding-large">TO DO</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-padding-large">EVENTS</a>
+    <a href="faq.html" class="w3-bar-item w3-button w3-padding-large">FAQ</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding: 60px 16px 5px; background-color: lightseagreen;">
+  <h1 class="w3-margin w3-jumbo marcellus">EVENTS</h1>
+</header>
+
+<div class="w3-container w3-padding-64 w3-center">
+    <iframe src="https://calendar.google.com/calendar/embed?src=c_69e2a8790f715ed702bb81f7637ce55b05829a65f89f715376d01690ce6f43ed%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
